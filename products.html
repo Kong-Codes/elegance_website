@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Elegance</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/products.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">ELEGANCE</a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Products Hero -->
+  <section class="products-hero">
+    <div class="container">
+      <div class="products-hero-content">
+        <h1>Our Collections</h1>
+        <p>Timeless pieces crafted with care and attention to detail</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Section -->
+  <section class="filter-section">
+    <div class="container">
+      <div class="filters">
+        <div class="filter-group">
+          <label for="category-filter">Category:</label>
+          <select id="category-filter">
+            <option value="all">All Categories</option>
+            <option value="jackets">Jackets</option>
+            <option value="dresses">Dresses</option>
+            <option value="accessories">Accessories</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="collection-filter">Collection:</label>
+          <select id="collection-filter">
+            <option value="all">All Collections</option>
+            <option value="summer">Summer</option>
+            <option value="autumn">Autumn</option>
+            <option value="winter">Winter</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="sort-filter">Sort By:</label>
+          <select id="sort-filter">
+            <option value="featured">Featured</option>
+            <option value="newest">Newest</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Grid -->
+  <section class="products-grid">
+    <div class="container">
+      <div class="products-container">
+        <!-- Product 1 -->
+        <div class="product-card" data-category="jackets" data-collection="autumn">
+          <div class="product-image">
+            <img src="images/pexels-pexels-user-878504306-19694333.jpg" alt="Classic Tailored Blazer">
+            <div class="product-badges">
+              <span class="badge new">New</span>
+              <span class="badge sustainable">Sustainable</span>
+            </div>
+            <div class="product-actions">
+              <button class="quick-view" data-product="classic-blazer">Quick View</button>
+              <button class="add-to-wishlist"><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Classic Tailored Blazer</h3>
+            <p class="product-price">$189.00</p>
+            <div class="product-colors">
+              <span class="color-swatch black" data-color="Black"></span>
+              <span class="color-swatch navy" data-color="Navy"></span>
+              <span class="color-swatch beige" data-color="Beige"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card" data-category="dresses" data-collection="summer">
+          <div class="product-image">
+            <img src="images/pexels-ron-lach-10544108.jpg" alt="Floral Summer Dress">
+            <div class="product-badges">
+              <span class="badge sustainable">Sustainable</span>
+            </div>
+            <div class="product-actions">
+              <button class="quick-view" data-product="summer-dress">Quick View</button>
+              <button class="add-to-wishlist"><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Floral Summer Dress</h3>
+            <p class="product-price">$149.00</p>
+            <div class="product-colors">
+              <span class="color-swatch floral" data-color="Floral"></span>
+              <span class="color-swatch white" data-color="White"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card" data-category="accessories" data-collection="all-season">
+          <div class="product-image">
+            <img src="images/pexels-jose-martin-segura-benites-1422456152-27100523.jpg" alt="Classic Leather Tote">
+            <div class="product-badges">
+              <span class="badge bestseller">Bestseller</span>
+            </div>
+            <div class="product-actions">
+              <button class="quick-view" data-product="leather-tote">Quick View</button>
+              <button class="add-to-wishlist"><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Classic Leather Tote</h3>
+            <p class="product-price">$229.00</p>
+            <div class="product-colors">
+              <span class="color-swatch brown" data-color="Brown"></span>
+              <span class="color-swatch black" data-color="Black"></span>
+              <span class="color-swatch tan" data-color="Tan"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card" data-category="jackets" data-collection="winter">
+          <div class="product-image">
+            <img src="images/pexels-victoria-strelka_ph-128225472-11428514.jpg" alt="Premium Winter Coat">
+            <div class="product-badges">
+              <span class="badge new">New</span>
+            </div>
+            <div class="product-actions">
+              <button class="quick-view" data-product="winter-coat">Quick View</button>
+              <button class="add-to-wishlist"><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Premium Winter Coat</h3>
+            <p class="product-price">$299.00</p>
+            <div class="product-colors">
+              <span class="color-swatch camel" data-color="Camel"></span>
+              <span class="color-swatch gray" data-color="Gray"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card" data-category="accessories" data-collection="all-season">
+          <div class="product-image">
+            <img src="images/pexels-anuradha-mishra-357832475-14900849.jpg" alt="Printed Silk Scarf">
+            <div class="product-badges">
+              <span class="badge sustainable">Sustainable</span>
+            </div>
+            <div class="product-actions">
+              <button class="quick-view" data-product="silk-scarf">Quick View</button>
+              <button class="add-to-wishlist"><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Printed Silk Scarf</h3>
+            <p class="product-price">$89.00</p>
+            <div class="product-colors">
+              <span class="color-swatch blue-pattern" data-color="Blue Pattern"></span>
+              <span class="color-swatch red-pattern" data-color="Red Pattern"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card" data-category="dresses" data-collection="autumn">
+          <div class="product-image">
+            <img src="images/pexels-arina-krasnikova-5709867.jpg" alt="Merino Wool Knit Dress">
+            <div class="product-badges">
+              <span class="badge bestseller">Bestseller</span>
+              <span class="badge sustainable">Sustainable</span>
+            </div>
+            <div class="product-actions">
+              <button class="quick-view" data-product="knit-dress">Quick View</button>
+              <button class="add-to-wishlist"><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Merino Wool Knit Dress</h3>
+            <p class="product-price">$179.00</p>
+            <div class="product-colors">
+              <span class="color-swatch burgundy" data-color="Burgundy"></span>
+              <span class="color-swatch navy" data-color="Navy"></span>
+              <span class="color-swatch cream" data-color="Cream"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Product -->
+  <section class="featured-product">
+    <div class="container">
+      <div class="featured-product-container">
+        <div class="featured-product-gallery">
+          <div class="main-image">
+            <img id="featured-main-image" src="images/pexels-musaabzayona-19109152.jpg" alt="Classic Tailored Blazer">
+          </div>
+          <div class="thumbnail-images">
+            <img class="thumbnail active" src="images/pexels-musaabzayona-19109152.jpg" alt="Classic Tailored Blazer - Front View">
+            <img class="thumbnail" src="images/pexels-pexels-user-878504306-19694333.jpg" alt="Classic Tailored Blazer - Side View">
+            <img class="thumbnail" src="images/pexels-funda-verep-683758994-18138596.jpg" alt="Classic Tailored Blazer - Detail View">
+            <img class="thumbnail" src="images/pexels-kris-3293670-4936952.jpg" alt="Classic Tailored Blazer - Back View">
+          </div>
+        </div>
+        <div class="featured-product-details">
+          <div class="product-category">JACKETS & COATS</div>
+          <h2 class="featured-title">Classic Tailored Blazer</h2>
+          <p class="featured-price">$189.00</p>
+          <div class="product-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span class="rating-count">(42 reviews)</span>
+          </div>
+          <p class="product-description">A timeless, tailored blazer crafted from premium Italian wool. Features a flattering slim fit, notched lapels, and a single-button closure. Fully lined with our signature print. This versatile piece transitions effortlessly from office to evening events.</p>
+          
+          <div class="product-options">
+            <div class="option-group">
+              <label>Color:</label>
+              <div class="color-options">
+                <div class="color-option black selected" data-color="Black"></div>
+                <div class="color-option navy" data-color="Navy"></div>
+                <div class="color-option beige" data-color="Beige"></div>
+              </div>
+              <span class="selected-option">Black</span>
+            </div>
+            
+            <div class="option-group">
+              <label>Size:</label>
+              <div class="size-options">
+                <button class="size-option">XS</button>
+                <button class="size-option">S</button>
+                <button class="size-option selected">M</button>
+                <button class="size-option">L</button>
+                <button class="size-option">XL</button>
+              </div>
+            </div>
+            
+            <div class="option-group">
+              <label>Quantity:</label>
+              <div class="quantity-selector">
+                <button class="quantity-btn minus">-</button>
+                <input type="number" class="quantity-input" value="1" min="1" max="10">
+                <button class="quantity-btn plus">+</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="product-actions">
+            <button class="add-to-cart-btn">Add to Cart</button>
+            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+          </div>
+          
+          <div class="product-meta">
+            <div class="meta-item">
+              <i class="fas fa-truck"></i>
+              <span>Free shipping on orders over $100</span>
+            </div>
+            <div class="meta-item">
+              <i class="fas fa-undo"></i>
+              <span>Free returns within 30 days</span>
+            </div>
+            <div class="meta-item">
+              <i class="fas fa-leaf"></i>
+              <span>Sustainably made with eco-friendly materials</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews -->
+  <section class="customer-reviews">
+    <div class="container">
+      <h2 class="section-title">Customer Reviews</h2>
+      <div class="reviews-container">
+        <div class="review">
+          <div class="reviewer-info">
+            <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg" alt="Emily Johnson">
+            <div>
+              <h4>Emily Johnson</h4>
+              <div class="review-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">"I've been searching for the perfect blazer for months, and this one exceeds all expectations. The quality is exceptional, and the fit is perfect. I've received so many compliments when wearing it to meetings and events."</p>
+          <p class="review-date">May 15, 2025</p>
+        </div>
+        <div class="review">
+          <div class="reviewer-info">
+            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" alt="James Wilson">
+            <div>
+              <h4>James Wilson</h4>
+              <div class="review-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">"The material and stitching are top-notch. I purchased the navy color, and it's versatile enough to wear with both formal and casual outfits. The only reason for 4 stars instead of 5 is that the sleeves are slightly longer than expected."</p>
+          <p class="review-date">April 22, 2025</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- You May Also Like -->
+  <section class="related-products">
+    <div class="container">
+      <h2 class="section-title">You May Also Like</h2>
+      <div class="related-products-slider">
+        <div class="related-product">
+          <img src="images/pexels-victoria-strelka_ph-128225472-11428514.jpg" alt="Premium Winter Coat">
+          <h3>Premium Winter Coat</h3>
+          <p>$299.00</p>
+        </div>
+        <div class="related-product">
+          <img src="images/pexels-ron-lach-10544108.jpg" alt="Floral Summer Dress">
+          <h3>Floral Summer Dress</h3>
+          <p>$149.00</p>
+        </div>
+        <div class="related-product">
+          <img src="images/pexels-arina-krasnikova-5709867.jpg" alt="Merino Wool Knit Dress">
+          <h3>Merino Wool Knit Dress</h3>
+          <p>$179.00</p>
+        </div>
+        <div class="related-product">
+          <img src="images/pexels-jose-martin-segura-benites-1422456152-27100523.jpg" alt="Classic Leather Tote">
+          <h3>Classic Leather Tote</h3>
+          <p>$229.00</p>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+        <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Lightbox -->
+  <div class="lightbox-overlay" id="product-lightbox">
+    <div class="lightbox-container">
+      <button class="close-lightbox"><i class="fas fa-times"></i></button>
+      <div class="lightbox-content">
+        <div class="lightbox-gallery">
+          <div class="main-lightbox-image">
+            <img id="lightbox-main-image" src="" alt="">
+          </div>
+          <div class="lightbox-thumbnails">
+            <!-- Thumbnails will be added dynamically -->
+          </div>
+        </div>
+        <div class="lightbox-details">
+          <!-- Product details will be added dynamically -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>ELEGANCE</h3>
+          <p>Redefining fashion with timeless pieces that blend style, comfort, and sustainability.</p>
+          <p>• The information provided on this website is intended for educational purposes only.
+            While every effort has been made to ensure the accuracy and reliability of the content,
+            the university does not guarantee its completeness or effectiveness. This website will be
+            deactivated once the course is completed. Some images used on this site have been
+            sourced from the internet and are included for educational and practice purposes only.
+            If you are the copyright owner of any image and believe it has been used without proper
+            attribution, please contact us, and we will make the necessary corrections.
+            <br>• The views expressed on this site do not necessarily reflect the official policies or
+            positions of the university. The university is not responsible for any errors or omissions
+            or the results obtained from using this information.
+            <br>• By using this website, you acknowledge and agree to these terms.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Collections</h4>
+          <ul>
+            <li><a href="products.html">New Arrivals</a></li>
+            <li><a href="products.html">Summer Collection</a></li>
+            <li><a href="products.html">Autumn Styles</a></li>
+            <li><a href="products.html">Accessories</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul class="contact-info">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Fashion St, New York, NY</li>
+            <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+            <li><i class="fas fa-envelope"></i> info@elegance.com</li>
+          </ul>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Join our newsletter">
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Elegance. All rights reserved.</p>
+        <ul class="footer-bottom-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>

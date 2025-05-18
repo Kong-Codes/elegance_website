@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Elegance</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">ELEGANCE</a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact Hero -->
+  <section class="contact-hero">
+    <div class="container">
+      <div class="contact-hero-content">
+        <h1>Get in Touch</h1>
+        <p>We'd love to hear from you. Reach out with any questions, feedback, or partnership opportunities.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Details -->
+  <section class="contact-details">
+    <div class="container">
+      <div class="contact-cards">
+        <div class="contact-card">
+          <div class="card-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3>Visit Us</h3>
+          <p>123 Fashion Street<br>New York, NY 10001<br>United States</p>
+        </div>
+        <div class="contact-card">
+          <div class="card-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h3>Email Us</h3>
+          <p>info@elegance.com<br>support@elegance.com<br>careers@elegance.com</p>
+        </div>
+        <div class="contact-card">
+          <div class="card-icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <h3>Call Us</h3>
+          <p>+1 (123) 456-7890<br>+1 (123) 456-7891<br>Monday-Friday: 9am-6pm ET</p>
+        </div>
+        <div class="contact-card">
+          <div class="card-icon">
+            <i class="fas fa-comments"></i>
+          </div>
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact-form-section">
+    <div class="container">
+      <div class="contact-container">
+        <div class="form-container">
+          <h2 class="section-title">Send Us a Message</h2>
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required>
+              <span class="error-message" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+              <span class="error-message" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <input type="text" id="subject" name="subject" required>
+              <span class="error-message" id="subjectError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <span class="error-message" id="messageError"></span>
+            </div>
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="privacy" name="privacy" required>
+              <label for="privacy">I agree to the privacy policy</label>
+              <span class="error-message" id="privacyError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <div class="form-status" id="formStatus"></div>
+          </form>
+        </div>
+        <div class="map-container">
+          <div class="map-wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.982950921249!2d-73.9972945!3d40.7415953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a4119ce269%3A0x9dec0c979b575972!2sFlatiron%20District%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1621521757850!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="store-hours">
+            <h3>Store Hours</h3>
+            <ul>
+              <li><span>Monday - Friday:</span> 10:00 AM - 8:00 PM</li>
+              <li><span>Saturday:</span> 10:00 AM - 6:00 PM</li>
+              <li><span>Sunday:</span> 11:00 AM - 5:00 PM</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>What is your return policy?</h3>
+            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>We offer free returns within 30 days of purchase. Items must be unworn, unwashed, and with all original tags attached. For more details, please visit our Returns page or contact our customer service team.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>How can I track my order?</h3>
+            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Once your order ships, you will receive a confirmation email with tracking information. You can also log into your account on our website to view your order status and tracking details.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Do you ship internationally?</h3>
+            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, we ship to over 50 countries worldwide. International shipping rates and delivery times vary by location. You can view shipping options during checkout or contact us for more information.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>How can I find my size?</h3>
+            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>We provide detailed size guides for all our products. You can find the size chart on each product page. If you're between sizes or have specific questions about fit, please contact our customer service team for personalized assistance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-container">
+        <div class="newsletter-content">
+          <h2>Join Our Newsletter</h2>
+          <p>Subscribe to receive updates on new collections, exclusive offers, and styling tips.</p>
+        </div>
+        <form class="newsletter-form">
+          <div class="form-group">
+            <input type="email" id="newsletter-email" placeholder="Your email address" required>
+            <button type="submit" class="btn">Subscribe</button>
+          </div>
+          <div class="newsletter-status" id="newsletterStatus"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>ELEGANCE</h3>
+          <p>Redefining fashion with timeless pieces that blend style, comfort, and sustainability.</p>
+          <p>• The information provided on this website is intended for educational purposes only.
+            While every effort has been made to ensure the accuracy and reliability of the content,
+            the university does not guarantee its completeness or effectiveness. This website will be
+            deactivated once the course is completed. Some images used on this site have been
+            sourced from the internet and are included for educational and practice purposes only.
+            If you are the copyright owner of any image and believe it has been used without proper
+            attribution, please contact us, and we will make the necessary corrections.
+            <br>• The views expressed on this site do not necessarily reflect the official policies or
+            positions of the university. The university is not responsible for any errors or omissions
+            or the results obtained from using this information.
+            <br>• By using this website, you acknowledge and agree to these terms.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Collections</h4>
+          <ul>
+            <li><a href="products.html">New Arrivals</a></li>
+            <li><a href="products.html">Summer Collection</a></li>
+            <li><a href="products.html">Autumn Styles</a></li>
+            <li><a href="products.html">Accessories</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul class="contact-info">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Fashion St, New York, NY</li>
+            <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+            <li><i class="fas fa-envelope"></i> info@elegance.com</li>
+          </ul>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Join our newsletter">
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Elegance. All rights reserved.</p>
+        <ul class="footer-bottom-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

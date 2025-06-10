@@ -78,6 +78,27 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+
+  // Blog post read more functionality
+  const readMoreButtons = document.querySelectorAll('.read-more');
+  
+  readMoreButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const postContent = this.closest('.post-content');
+      const fullContent = postContent.querySelector('.post-content-full');
+      const isExpanded = fullContent.classList.contains('active');
+      
+      if (isExpanded) {
+        fullContent.classList.remove('active');
+        this.textContent = 'Read More';
+        // Scroll to the top of the post
+        postContent.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        fullContent.classList.add('active');
+        this.textContent = 'Show Less';
+      }
+    });
+  });
 });
 
 // Email validation
